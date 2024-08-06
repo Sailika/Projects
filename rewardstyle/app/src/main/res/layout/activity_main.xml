@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/hero_img"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:src="@drawable/ic_baseline_account" />
+
+
+        <TextView
+            android:id="@+id/lkt_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/products" />
+
+        <ListView
+            android:id="@+id/products_list"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            tools:listitem="@android:layout/simple_list_item_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/prev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/prev" />
+
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/next" />
+        </LinearLayout>
+
+
+</LinearLayout>
